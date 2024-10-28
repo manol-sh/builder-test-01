@@ -1,3 +1,8 @@
+[[headers]]
+for = "/*"
+  [headers.values]
+  Content-Security-Policy = "frame-ancestors 'self' https://builder.io"
+
 [build]
   publish = "public"
   command = "gatsby build"
@@ -6,5 +11,3 @@
   from = "/*"
   to = "/index.html"
   status = 200
-
-  Content-Security-Policy: frame-ancestors 'self' https://builder.io
