@@ -3,10 +3,11 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import { Builder, builder, BuilderComponent } from '@builder.io/react';
 import NotFoundPage from '../pages/404';
+import Divider from '../components/divider/divider';
 
 // Initialize the Builder SDK with your organization's API Key
 // Find the API Key on: https://builder.io/account/settings
-builder.init('d4173130c72d466386720bb5a107ae34');
+builder.init(process.env.GATSBY_BUILDER_IO_API_KEY);
 
 // Your template populates your Gatsby pages with your Builder page content.
 function PageTemplate({ data }) {
