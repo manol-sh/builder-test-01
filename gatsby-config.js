@@ -11,7 +11,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `My Builder Site`,
-    siteUrl: `https://qa-milancorpbuilder.netlify.app/`,
+    siteUrl: `https://buildertest1.netlify.app`,
   },
   plugins: [
     {

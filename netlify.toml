@@ -6,3 +6,5 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+  Content-Security-Policy: frame-ancestors 'self' https://builder.io
